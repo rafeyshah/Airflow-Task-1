@@ -4,6 +4,7 @@ http://airflow.readthedocs.org/en/latest/tutorial.html
 """
 from airflow import DAG
 from datetime import datetime, timedelta
+from airflow.operators.bash_operator import BashOperator
 
 
 default_args = {
